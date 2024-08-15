@@ -1,2 +1,5 @@
 private_key.pem
-public_key.pem
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.lock.hcl

@@ -38,11 +38,11 @@ func main() {
 	}
 
 	// Generate Signed URL 1 hour duration
-	distributionDomainName := "https://d29rocx8hatacz.cloudfront.net"
+	distributionDomainName := "https://d1ygtm4i6il0it.cloudfront.net"
 	filePath := "I_HAVE_PEAKED.png"
 	rawURL := distributionDomainName + "/" + filePath
 	// Public Key ID
-	signer := sign.NewURLSigner("K28GN3KRV70S0T", privateKey)
+	signer := sign.NewURLSigner("KDGA5X5RDJK4W", privateKey)
 	signedURL, err := signer.Sign(rawURL, time.Now().Add(1*time.Hour))
 	if err != nil {
 		log.Fatalf("Failed to sign url, err: %s\n", err.Error())
